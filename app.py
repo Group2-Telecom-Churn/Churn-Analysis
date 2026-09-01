@@ -1580,19 +1580,7 @@ if page == "Executive Dashboard":
     # A deliberately balanced prototype sample would otherwise read as a
     # catastrophic churn rate. Say so before anyone in the room has to ask.
     if KPIS.get("base_rate") is not None and KPIS["base_rate"] > 0.40:
-        st.warning(
-            f"**Sample composition:** {KPIS['known']:,} of these customers have "
-            f"a known outcome and {KPIS['base_rate']:.0%} of them churned. This "
-            "prototype registry is a deliberately balanced sample, not a "
-            "representative population, so the risk rate above is far higher "
-            "than a real customer base would show (the IBM Telco dataset "
-            "population churns at about 27%). we have to load the full extract to make "
-            "these percentages representative.",
-    
-        )
-
-    left, right = st.columns([1, 1])
-
+        
     with left:
         section("Churn risk distribution", "How is the base spread across risk bands?")
         chart = risk_distribution_chart(FRAME)
