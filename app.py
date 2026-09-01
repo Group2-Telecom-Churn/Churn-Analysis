@@ -943,7 +943,7 @@ preprocessor, model, artifacts_loaded, artifact_error = bootstrap()
 
 
 with st.sidebar:
-    st.markdown("## 📡 Telecom Churn AI")
+    st.markdown("## 📡 Group 2 Telecom Churn APP")
     st.caption("Group 2 • Retention Intelligence")
     st.markdown("---")
 
@@ -1064,7 +1064,7 @@ st.markdown(
 )
 
 st.markdown(
-    f'<div class="threshold">🔒 Classification threshold locked at {CHURN_THRESHOLD:.0%}</div>',
+    f'<div class="threshold"> Classification threshold locked at {CHURN_THRESHOLD:.0%}</div>',
     unsafe_allow_html=True,
 )
 
@@ -1121,7 +1121,7 @@ if page == "Dashboard":
             # Display the stored result when the customer has been pre-scanned.
             if stored_scan:
                 st.markdown(
-                    '<div class="section-title">📌 Stored Customer Result</div>',
+                    '<div class="section-title"> Stored Customer Result</div>',
                     unsafe_allow_html=True,
                 )
 
@@ -1153,7 +1153,7 @@ if page == "Dashboard":
 
                 # Display the threshold used by the stored prediction.
                 st.markdown(
-                    f'<div class="threshold">🔒 Decision threshold: {CHURN_THRESHOLD:.0%}</div>',
+                    f'<div class="threshold"> Decision threshold: {CHURN_THRESHOLD:.0%}</div>',
                     unsafe_allow_html=True,
                 )
 
@@ -1170,7 +1170,7 @@ if page == "Dashboard":
                 )
 
                 st.markdown(
-                    '<div class="section-title">🎯 Key Customer Signals</div>',
+                    '<div class="section-title"> Key Customer Signals</div>',
                     unsafe_allow_html=True,
                 )
 
@@ -1185,7 +1185,7 @@ if page == "Dashboard":
 
                 # Display the same retention actions used for newly scanned customers.
                 st.markdown(
-                    '<div class="section-title">💡 Suggested Retention Actions</div>',
+                    '<div class="section-title"> Suggested Retention Actions</div>',
                     unsafe_allow_html=True,
                 )
 
@@ -1281,12 +1281,12 @@ if page == "Dashboard":
 
         if prediction == 1:
             st.markdown(
-                '<div class="status-churn">⚠️ CHURN FLAG — RETENTION INTERVENTION RECOMMENDED</div>',
+                '<div class="status-churn"> CHURN FLAG — RETENTION INTERVENTION RECOMMENDED</div>',
                 unsafe_allow_html=True,
             )
         else:
             st.markdown(
-                '<div class="status-retain">✅ NO CHURN FLAG — STANDARD MONITORING</div>',
+                '<div class="status-retain"> NO CHURN FLAG — STANDARD MONITORING</div>',
                 unsafe_allow_html=True,
             )
 
@@ -1335,7 +1335,7 @@ if page == "Dashboard":
         )
 
         st.markdown(
-            '<div class="section-title">🎯 Key Customer Signals</div>',
+            '<div class="section-title"> Key Customer Signals</div>',
             unsafe_allow_html=True,
         )
 
@@ -1352,7 +1352,7 @@ if page == "Dashboard":
 
         # Display the retention recommendations for the new scan.
         st.markdown(
-            '<div class="section-title">💡 Suggested Retention Actions</div>',
+            '<div class="section-title"> Suggested Retention Actions</div>',
             unsafe_allow_html=True,
         )
 
@@ -1367,7 +1367,7 @@ if page == "Dashboard":
             st.markdown(f"- {action}")
 
         st.markdown(
-            '<div class="section-title">📋 Scanned Customer Profile</div>',
+            '<div class="section-title"> Scanned Customer Profile</div>',
             unsafe_allow_html=True,
         )
 
@@ -1394,7 +1394,7 @@ if page == "Dashboard":
 elif page == "Customer Registry":
 
     st.markdown(
-        '<div class="section-title">🗃️ Customer Registry</div>',
+        '<div class="section-title"> Customer Registry</div>',
         unsafe_allow_html=True,
     )
 
@@ -1447,7 +1447,7 @@ elif page == "Customer Registry":
 elif page == "Analytics":
 
     st.markdown(
-        '<div class="section-title">📈 Scan Analytics</div>',
+        '<div class="section-title"> Scan Analytics</div>',
         unsafe_allow_html=True,
     )
 
@@ -1564,7 +1564,7 @@ elif page == "Analytics":
 elif page == "System Logs":
 
     st.markdown(
-        '<div class="section-title">🛠️ System Logs</div>',
+        '<div class="section-title"> System Logs</div>',
         unsafe_allow_html=True,
     )
 
