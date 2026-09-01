@@ -1045,7 +1045,7 @@ with st.sidebar:
     )
 
     predict_button = st.button(
-        "🔍 Run Prediction",
+        " Run Prediction",
         use_container_width=True,
     )
 
