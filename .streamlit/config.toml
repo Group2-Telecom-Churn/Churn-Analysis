@@ -2,6 +2,12 @@
 base = "dark"
 primaryColor = "#3b82f6"
  
+# Typography. "Family:CSS-URL" loads the font from Google Fonts.
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+headingFont = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&display=swap"
+codeFont = "'JetBrains Mono':https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+baseFontSize = 15
+ 
 [theme.dark]
 backgroundColor = "#0b1730"
 secondaryBackgroundColor = "#101b35"
@@ -14,4 +20,3 @@ textColor = "#0f172a"
  
 [client]
 toolbarMode = "viewer"
- 
