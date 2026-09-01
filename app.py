@@ -1585,10 +1585,10 @@ if page == "Executive Dashboard":
             f"a known outcome and {KPIS['base_rate']:.0%} of them churned. This "
             "prototype registry is a deliberately balanced sample, not a "
             "representative population, so the risk rate above is far higher "
-            "than a real customer base would show (the published Telco "
-            "population churns at about 27%). Load the full extract to make "
+            "than a real customer base would show (the IBM Telco dataset "
+            "population churns at about 27%). We have to load the full dataset to make "
             "these percentages representative.",
-            icon="⚠️",
+            
         )
 
     left, right = st.columns([1, 1])
