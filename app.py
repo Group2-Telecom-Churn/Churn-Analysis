@@ -1,5 +1,5 @@
 """
-RetentionIQ - Telecom Customer Retention Intelligence
+Retention IQ - Telecom Customer Retention Intelligence
 Developed by Group 2.
 
 The application turns a churn model into a retention workflow:
@@ -18,7 +18,7 @@ import pandas as pd
 import streamlit as st
 
 
-PRODUCT_NAME = "RetentionIQ"
+PRODUCT_NAME = "Retention IQ"
 PRODUCT_TAGLINE = "Telecom Customer Retention Intelligence"
 BUILT_BY = "Developed by Group 2"
 
