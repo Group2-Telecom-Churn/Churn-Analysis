@@ -1,5 +1,5 @@
 """
-RetentionIQ - Telecom Customer Retention Intelligence
+Retention IQ - Telecom Customer Retention Intelligence
 Developed by Group 2.
 
 The application turns a churn model into a retention workflow:
@@ -18,7 +18,7 @@ import pandas as pd
 import streamlit as st
 
 
-PRODUCT_NAME = "RetentionIQ"
+PRODUCT_NAME = "Retention IQ"
 PRODUCT_TAGLINE = "Telecom Customer Retention Intelligence"
 BUILT_BY = "Developed by Group 2"
 
@@ -1581,14 +1581,7 @@ if page == "Executive Dashboard":
     # catastrophic churn rate. Say so before anyone in the room has to ask.
     if KPIS.get("base_rate") is not None and KPIS["base_rate"] > 0.40:
         st.warning(
-            f"**Sample composition:** {KPIS['known']:,} of these customers have "
-            f"a known outcome and {KPIS['base_rate']:.0%} of them churned. This "
-            "prototype registry is a deliberately balanced sample, not a "
-            "representative population, so the risk rate above is far higher "
-            "than a real customer base would show (the published Telco "
-            "population churns at about 27%). Load the full extract to make "
-            "these percentages representative.",
-            icon="⚠️",
+            
         )
 
     left, right = st.columns([1, 1])
