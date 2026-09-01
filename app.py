@@ -1470,7 +1470,7 @@ ROLE_BLURB = {
 }
 
 with st.sidebar:
-    st.markdown(f"### 📡 {PRODUCT_NAME}")
+    st.markdown(f"###  {PRODUCT_NAME}")
     st.caption(PRODUCT_TAGLINE)
     st.markdown("---")
 
