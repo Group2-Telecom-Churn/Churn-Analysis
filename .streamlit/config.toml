@@ -2,10 +2,11 @@
 base = "dark"
 primaryColor = "#3b82f6"
  
-# Typography. "Family:CSS-URL" loads the font from Google Fonts.
-font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
-headingFont = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&display=swap"
-codeFont = "'JetBrains Mono':https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+# Typography. "sans-serif" / "monospace" are Streamlit's own bundled faces
+# (Source Sans / Source Code Pro) - served with the app, so nothing is
+# downloaded from a third party at runtime.
+font = "sans-serif"
+codeFont = "monospace"
 baseFontSize = 15
  
 [theme.dark]
