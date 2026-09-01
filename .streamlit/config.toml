@@ -2,11 +2,12 @@
 base = "dark"
 primaryColor = "#3b82f6"
  
-# Typography. "sans-serif" / "monospace" are Streamlit's own bundled faces
-# (Source Sans / Source Code Pro) - served with the app, so nothing is
-# downloaded from a third party at runtime.
-font = "sans-serif"
-codeFont = "monospace"
+# Typography - IBM Plex Sans, loaded via Streamlit's "Family:CSS-URL" syntax.
+# Streamlit automatically appends Source Sans as a fallback, so the app stays
+# readable if Google Fonts is unreachable.
+font = "IBM Plex Sans:https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+headingFont = "IBM Plex Sans:https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600;700&display=swap"
+codeFont = "IBM Plex Mono:https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap"
 baseFontSize = 15
  
 [theme.dark]
