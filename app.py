@@ -1053,7 +1053,7 @@ with st.sidebar:
 st.markdown(
     """
     <div class="hero">
-        <h1>📡 Telecom Customer Churn AI</h1>
+        <h1> Telecom Customer Churn AI</h1>
         <div class="muted">
             Retention intelligence for identifying customers who may be at risk
             of leaving the service.
