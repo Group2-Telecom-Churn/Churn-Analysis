@@ -1581,7 +1581,14 @@ if page == "Executive Dashboard":
     # catastrophic churn rate. Say so before anyone in the room has to ask.
     if KPIS.get("base_rate") is not None and KPIS["base_rate"] > 0.40:
         st.warning(
-            
+            f"**Sample composition:** {KPIS['known']:,} of these customers have "
+            f"a known outcome and {KPIS['base_rate']:.0%} of them churned. This "
+            "prototype registry is a deliberately balanced sample, not a "
+            "representative population, so the risk rate above is far higher "
+            "than a real customer base would show (the full Telco dataset "
+            "population churns at about 26.5%). we have to load the full extract to make "
+            "these percentages representative.",
+            icon=""
         )
 
     left, right = st.columns([1, 1])
