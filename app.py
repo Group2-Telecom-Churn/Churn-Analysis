@@ -2,6 +2,7 @@ import os
 import warnings
 import sqlite3
 from datetime import datetime
+from io import StringIO
 
 import joblib
 import numpy as np
@@ -380,7 +381,7 @@ def get_churn_probability(input_df, preprocessor, model):
 @st.cache_data(show_spinner=False)
 def _get_customer_signals_cached(input_json):
     # Reconstruct the exact one-row customer DataFrame from the stable JSON key.
-    customer_df = pd.read_json(input_json, orient="split")
+    pd.read_json(StringIO(input_json), orient="split")
 
     # Use the artifacts loaded by the application initializer.
     base_probability = get_churn_probability(
