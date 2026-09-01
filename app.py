@@ -943,7 +943,7 @@ preprocessor, model, artifacts_loaded, artifact_error = bootstrap()
 
 
 with st.sidebar:
-    st.markdown("## Group 2 Telecom Churn APP")
+    st.markdown("## Group 2 Telecom Churn App")
     st.caption("Group 2 • Retention Intelligence")
     st.markdown("---")
 
