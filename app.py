@@ -943,7 +943,7 @@ preprocessor, model, artifacts_loaded, artifact_error = bootstrap()
 
 
 with st.sidebar:
-    st.markdown("## 📡 Group 2 Telecom Churn APP")
+    st.markdown("## Group 2 Telecom Churn APP")
     st.caption("Group 2 • Retention Intelligence")
     st.markdown("---")
 
@@ -1082,7 +1082,7 @@ if page == "Dashboard":
         st.stop()
 
     st.markdown(
-        '<div class="section-title">🔎 Find Customer</div>',
+        '<div class="section-title"> Find Customer</div>',
         unsafe_allow_html=True,
     )
 
