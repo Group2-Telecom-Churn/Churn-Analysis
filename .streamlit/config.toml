@@ -2,13 +2,11 @@
 base = "dark"
 primaryColor = "#3b82f6"
  
-# Typography - IBM Plex Sans, loaded via Streamlit's "Family:CSS-URL" syntax.
-# Streamlit automatically appends Source Sans as a fallback, so the app stays
-# readable if Google Fonts is unreachable.
-font = "IBM Plex Sans:https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap"
-headingFont = "IBM Plex Sans:https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600;700&display=swap"
+# Typography - IBM Plex Serif throughout, IBM Plex Mono for code.
+font = "IBM Plex Serif:https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600&display=swap"
+headingFont = "IBM Plex Serif:https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@600;700&display=swap"
 codeFont = "IBM Plex Mono:https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap"
-baseFontSize = 15
+baseFontSize = 16
  
 [theme.dark]
 backgroundColor = "#0b1730"
