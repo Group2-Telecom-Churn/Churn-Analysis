@@ -1,1 +1,17 @@
-
+[theme]
+base = "dark"
+primaryColor = "#3b82f6"
+ 
+[theme.dark]
+backgroundColor = "#0b1730"
+secondaryBackgroundColor = "#101b35"
+textColor = "#f8fafc"
+ 
+[theme.light]
+backgroundColor = "#f8fafc"
+secondaryBackgroundColor = "#eef2f9"
+textColor = "#0f172a"
+ 
+[client]
+toolbarMode = "viewer"
+ 
