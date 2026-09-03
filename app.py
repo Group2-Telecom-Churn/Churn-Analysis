@@ -1451,12 +1451,12 @@ ROLE_PAGES = {
     "Retention Manager": [
         "Executive Dashboard", "Customer Registry", "Retention Cases", "Analytics",
     ],
-    "Retention Agent": ["Customer Registry", "Customer 360", "Retention Cases"],
+    "Retention Agent": ["Customer Registry", "Customer Profile", "Retention Cases"],
     "Data Analyst": [
-        "Executive Dashboard", "Analytics", "Customer Registry", "Customer 360",
+        "Executive Dashboard", "Analytics", "Customer Registry", "Customer Profile",
     ],
     "Administrator": [
-        "Executive Dashboard", "Customer Registry", "Customer 360",
+        "Executive Dashboard", "Customer Registry", "Customer Profile",
         "Retention Cases", "Analytics", "System Logs",
     ],
 }
@@ -1778,12 +1778,12 @@ elif page == "Customer Registry":
 
 
 # ==========================================================================
-# Customer 360 - score a customer and act on the result
+# Customer Profile - score a customer and act on the result
 # ==========================================================================
 
-elif page == "Customer 360":
+elif page == "Customer Profile":
     page_header(
-        "Customer 360",
+        "Customer Profile",
         "Score a customer, understand the drivers, and start an intervention.",
     )
 
@@ -2071,7 +2071,7 @@ elif page == "Retention Cases":
     if cases.empty:
         st.info(
             "No retention cases yet. Open one from the Customer Registry or "
-            "from a scored customer on Customer 360."
+            "from a scored customer on Customer Profile."
         )
     else:
         section("Case pipeline", "Where does the work currently sit?")
